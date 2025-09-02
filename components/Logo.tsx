@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-const Logo = ({ className }: { className?: string }) => {
+const Logo = ({
+  className,
+  spanDesign,
+}: {
+  className?: string;
+  spanDesign?: string;
+}) => {
   return (
     <Link href="/" className="no-underline">
       <h2
@@ -12,7 +18,12 @@ const Logo = ({ className }: { className?: string }) => {
         )}
       >
         Shopcar
-        <span className="text-shop_light_green group-hover:text-shop_btn_dark_green hoverEffect">
+        <span
+          className={cn(
+            "text-shop_light_green group-hover:text-shop_btn_dark_green hoverEffect",
+            className
+          )}
+        >
           t
         </span>
       </h2>
