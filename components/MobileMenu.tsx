@@ -2,8 +2,11 @@
 import { AlignLeft } from "lucide-react";
 import React, { useState } from "react";
 import SideMenu from "./SideMenu";
+import { usePathname } from "next/navigation";
 
 const MobileMenu = () => {
+  const pathname = usePathname();
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
