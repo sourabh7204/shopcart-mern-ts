@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 function Home() {
   return (
-    <Container className=" bg-shop-light-pink">
+    <Container className="bg-shop-light-pink">
       <HomeBanner />
     </Container>
   );
