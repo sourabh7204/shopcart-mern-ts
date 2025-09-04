@@ -1,4 +1,3 @@
-//Data for NavBar
 export const headerData = [
   { title: "Home", href: "/" },
   { title: "Shop", href: "/shop" },
@@ -6,8 +5,6 @@ export const headerData = [
   { title: "Hot Deal", href: "/deal" },
   //   { title: "Contact", href: "/contact" },
 ];
-
-//Data for Fotter
 export const quickLinksData = [
   { title: "About us", href: "/about" },
   { title: "Contact us", href: "/contact" },
@@ -16,8 +13,6 @@ export const quickLinksData = [
   { title: "FAQs", href: "/faqs" },
   { title: "Help", href: "/help" },
 ];
-
-//Data for
 export const categoriesData = [
   { title: "Mobiles", href: "mobiles" },
   { title: "Appliances", href: "appliances" },
@@ -26,4 +21,10 @@ export const categoriesData = [
   { title: "Washing Machine", href: "washing-machine" },
   { title: "Kitchen Appliances", href: "kitchen-appliances" },
   { title: "gadget accessories", href: "gadget-accessories" },
+];
+export const productType = [
+  { title: "Gadget", value: "gadget" },
+  { title: "Appliances", value: "appliances" },
+  { title: "Refrigerators", value: "refrigerators" },
+  { title: "Others", value: "others" },
 ];
