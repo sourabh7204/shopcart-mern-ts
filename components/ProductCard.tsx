@@ -5,10 +5,10 @@ import React from "react";
 import Link from "next/link";
 import { StarIcon } from "@sanity/icons";
 import { Flame } from "lucide-react";
-// import PriceView from "./PriceView";
+import PriceView from "./PriceView";
 import Title from "./Title";
 // import ProductSideMenu from "./ProductSideMenu";
-// import AddToCartButton from "./AddToCartButton";
+import AddToCartButton from "./AddToCartButton";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
@@ -76,12 +76,12 @@ const ProductCard = ({ product }: { product: Product }) => {
           </p>
         </div>
 
-        {/* <PriceView
+        <PriceView
           price={product?.price}
           discount={product?.discount}
           className="text-sm"
         />
-        <AddToCartButton product={product} className="w-36 rounded-full" /> */}
+        <AddToCartButton product={product} className="w-36 rounded-full" />
       </div>
     </div>
   );

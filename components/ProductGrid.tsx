@@ -13,7 +13,7 @@ import { productType } from "@/constants/data";
 // // <Product[]>
 const ProductGrid = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [selectedTab, setSelectedTab] = useState(productType[0]?.title || "");
   const query = `*[_type == "product" && variant == $variant] | order(name asc){_id,
   ...,"categories": categories[]->title

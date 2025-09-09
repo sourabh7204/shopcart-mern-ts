@@ -21,16 +21,12 @@ export default function RootLayout({
   return (
     //Clerk Taking the data
     <ClerkProvider>
-      <html lang="en">
-        <body className="font-poppins antialiased">
-          <div className="font-poppins antialiased">
-            <Header />
-            <main className="flex-1 min-h-screen ">{children}</main>
+      <div className="font-poppins antialiased">
+        <Header />
+        <main className="flex-1 min-h-screen ">{children}</main>
 
-            <Footer />
-          </div>
-        </body>
-      </html>
+        <Footer />
+      </div>
     </ClerkProvider>
   );
 }
