@@ -9,10 +9,10 @@ import { Loader2 } from "lucide-react";
 import Container from "./Container";
 import HomeTabBar from "./HomeTabBar";
 import { productType } from "@/constants/data";
-// import { Product } from "@/sanity.types";
-// // <Product[]>
+import { Product } from "@/sanity.types";
+
 const ProductGrid = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedTab, setSelectedTab] = useState(productType[0]?.title || "");
   const query = `*[_type == "product" && variant == $variant] | order(name asc){_id,

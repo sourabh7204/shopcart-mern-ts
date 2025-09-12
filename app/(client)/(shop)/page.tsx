@@ -1,20 +1,47 @@
+// import Container from "@/components/Container";
+// import HomeBanner from "@/components/HomeBanner";
+// import HomeCategories from "@/components/HomeCategories";
+// import ProductGrid from "@/components/ProductGrid";
+// import { Button } from "@/components/ui/button";
+// import { categoriesData } from "@/constants/data";
+
+// import React from "react";
+
+// const Home = async () => {
+//   const categories = await getCategories(6);
+//   return (
+//     <Container className="bg-shop-light-pink">
+//       <HomeBanner />
+//       <div className="py-10">
+//         <ProductGrid />
+//         <HomeCategories categories={categories} />
+//       </div>
+//     </Container>
+//   );
+// };
+
+// export default Home;
+
 import Container from "@/components/Container";
 import HomeBanner from "@/components/HomeBanner";
 import HomeCategories from "@/components/HomeCategories";
+// import LatestBlog from "@/components/LatestBlog";
 import ProductGrid from "@/components/ProductGrid";
-import { Button } from "@/components/ui/button";
-import { categoriesData } from "@/constants/data";
+// import ShopByBrands from "@/components/ShopByBrands";
+import { getCategories } from "@/sanity/queries";
 
-function Home() {
+import React from "react";
+
+const Home = async () => {
+  const categories = await getCategories(6);
+
   return (
     <Container className="bg-shop-light-pink">
       <HomeBanner />
-      <div className="py-10">
-        <ProductGrid />
-        <HomeCategories categories={categories} />
-      </div>
+      <ProductGrid />
+      <HomeCategories categories={categories} />
     </Container>
   );
-}
+};
 
 export default Home;
