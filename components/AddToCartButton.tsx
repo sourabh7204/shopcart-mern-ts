@@ -2,7 +2,11 @@
 import { Product } from "@/sanity.types";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { ShoppingBag } from "lucide-react";
+import {
+  ShoppingBag,
+  ShoppingBasketIcon,
+  ShoppingCartIcon,
+} from "lucide-react";
 import useStore from "@/store";
 import toast from "react-hot-toast";
 import PriceFormatter from "./PriceFormatter";
@@ -52,7 +56,7 @@ const AddToCartButton = ({ product, className }: Props) => {
             className
           )}
         >
-          <ShoppingBag /> {isOutOfStock ? "Out of Stock" : "Add to Cart"}
+          <ShoppingCartIcon /> {isOutOfStock ? "Out of Stock" : "Add to Cart"}
         </Button>
       )}
     </div>
