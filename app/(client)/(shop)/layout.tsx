@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import "../../globals.css";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: {
-    template: "%5 - Shopcart online store",
+    template: "%s - Shopcart online store",
     default: "Shopcart online store",
   },
   description: "Shopcart online store, Your one stop shop for all your needs",
@@ -19,12 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    //Clerk Taking the data
     <ClerkProvider>
-      <div className="font-poppins antialiased">
+      <div className="flex flex-col px-[50px]">
         <Header />
-        <main className="flex-1 min-h-screen ">{children}</main>
-
+        <main className="flex-1">{children}</main>
         <Footer />
       </div>
     </ClerkProvider>
