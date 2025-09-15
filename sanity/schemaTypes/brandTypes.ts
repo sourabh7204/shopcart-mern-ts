@@ -40,12 +40,12 @@ export const brandType = defineType({
     },
   },
 });
-export interface Brand {
-  _id: string;
-  title: string;
-  slug: {
-    current: string;
-  };
-  description?: string;
-  image?: any;
-}
+// export interface Brand {
+//   _id: string;
+//   title: string;
+//   slug: {
+//     current: string;
+//   };
+//   description?: string;
+//   image?: any;
+// }
