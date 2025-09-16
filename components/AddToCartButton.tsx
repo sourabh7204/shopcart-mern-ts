@@ -18,6 +18,7 @@ const AddToCartButton = ({ product, className }: Props) => {
   const itemCount = getItemCount(product?._id);
   const isOutOfStock = product?.stock === 0;
 
+  //add to cart Event Handler
   const handleAddToCart = () => {
     if ((product?.stock as number) > itemCount) {
       addItem(product);
