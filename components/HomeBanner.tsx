@@ -56,7 +56,7 @@ const HomeBanner = () => (
           Bose QC 35 II
         </p>
         <span className="text-xs md:text-sm text-blue-600 font-semibold">
-          Limited Offer
+          Limited Offer...
         </span>
       </div>
 
