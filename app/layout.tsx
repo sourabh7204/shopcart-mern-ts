@@ -1,21 +1,22 @@
-// import "./globals.css";
-// import { Toaster } from "react-hot-toast";
-// const RootLayout = ({ children }: { children: React.ReactNode }) => {
-//   return (
-//     <html lang="en">
-//       <body className="font-poppins antialiased">
-//         {children}
-//         <Toaster
-//           position="bottom-right"
-//           toastOptions={{
-//             style: {
-//               background: "#000000",
-//               color: "#fff",
-//             },
-//           }}
-//         />
-//       </body>
-//     </html>
-//   );
-// };
-// export default RootLayout;
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Shopcart Online Store",
+    template: "%s | Shopcart",
+  },
+  description: "Your one-stop shop for all your needs",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}

@@ -14,7 +14,8 @@ const HomeBanner = () => (
         Headphones
       </p>
       <p className="text-gray-600 text-xs md:text-base">
-        Shop product hits from **Sony, JBL, Bose**. Limited time deals!
+        Shop product hits from <strong>Sony, JBL, Bose</strong>. Limited time
+        deals!
       </p>
       <Link
         href="/shop"
@@ -33,6 +34,8 @@ const HomeBanner = () => (
           alt="JBL T450BT"
           width={150}
           height={150}
+          priority
+          style={{ height: "auto" }}
           className="drop-shadow-lg"
         />
         <p className="text-sm md:text-base font-bold text-gray-800 mt-1">
@@ -50,6 +53,7 @@ const HomeBanner = () => (
           alt="Bose QuietComfort 35 II"
           width={150}
           height={150}
+          style={{ height: "auto" }}
           className="drop-shadow-lg"
         />
         <p className="text-sm md:text-base font-bold text-gray-800 mt-1">
@@ -67,6 +71,7 @@ const HomeBanner = () => (
           alt="Sony Headphones"
           width={150}
           height={150}
+          style={{ height: "auto" }}
           className="drop-shadow-lg"
         />
         <p className="text-sm md:text-base font-bold text-gray-800 mt-1">
